@@ -18,8 +18,11 @@ This app roughly benchmarks sending data to WebWorkers via
 
 On a 2017 Macbook Air and Chrome 80.0.3987.149:
 
-|  Mechanism  | Time to send 1M | Time to receive 1M |
+|  Test Case  | Time to send 1M | Time to receive 1M |
 | ----------- | --------------- | ------------------ |
 | postMessage |      11.714 sec |         13.460 sec |
-|        uniq |      11.065 sec |         18.745 sec |
+|   uniq (64) |      11.065 sec |         18.745 sec |
+|  uniq (512) |      10.059 sec |         12.903 sec |
+| uniq (1024) |       9.999 sec |         12.871 sec |
 
+(Note: the number associate with the uniq test cases is the buffer size).
