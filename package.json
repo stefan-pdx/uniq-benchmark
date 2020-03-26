@@ -1,0 +1,19 @@
+{
+  "name": "uniq-benchmark",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c -w",
+    "start": "http-server public"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rollup-plugin-copy": "^3.3.0",
+    "rollup-plugin-svelte": "^5.1.1",
+    "svelte": "^3.20.1"
+  },
+  "dependencies": {
+    "http-server": "^0.12.1"
+  }
+}
